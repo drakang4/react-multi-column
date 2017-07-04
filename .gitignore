@@ -57,6 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# Built files
+lib
+
 
 # Windows thumbnail cache files
 Thumbs.db
@@ -87,7 +90,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
