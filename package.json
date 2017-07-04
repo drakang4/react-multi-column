@@ -3,11 +3,18 @@
   "version": "0.1.0",
   "description": "A simple react library for building multi-column layout",
   "main": "lib/index.js",
+  "author": "Heeryong Kang",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drakang4/react-multi-column.git"
+  },
   "scripts": {
     "build": "npm run build:lib",
     "build:lib": "babel src --out-dir lib",
     "prepublish": "rimraf lib",
+    "postinstall": "npm run build",
+    "test": "echo \"no test specified\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
