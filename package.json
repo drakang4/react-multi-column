@@ -1,6 +1,6 @@
 {
   "name": "react-multi-column",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple react library for building multi-column layout",
   "main": "lib/index.js",
   "author": "Heeryong Kang <drakang4@gmail.com> (https://github.com/drakang4)",
@@ -12,8 +12,8 @@
   "scripts": {
     "build": "npm run build:lib",
     "build:lib": "babel src --out-dir lib",
-    "prepublish": "rimraf lib",
-    "postinstall": "npm run build",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build",
     "test": "echo \"no test specified\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
