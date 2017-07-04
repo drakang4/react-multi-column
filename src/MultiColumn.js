@@ -8,8 +8,6 @@ const Container = styled.div`
 `;
 
 const Column = styled.div`
-  display: flex;
-  flex-direction: column;
   margin-right: ${props => props.gutter}px;
 
   &:last-child {
