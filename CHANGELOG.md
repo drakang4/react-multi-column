@@ -1,3 +1,7 @@
+# 0.1.3
+ - Fixed column width bug
+ - Render faster when only one column shows
+
 # 0.1.2
  - Fixed install error
 
