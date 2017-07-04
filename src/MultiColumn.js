@@ -8,6 +8,7 @@ const Container = styled.div`
 `;
 
 const Column = styled.div`
+  flex: 1;
   margin-right: ${props => props.gutter}px;
 
   &:last-child {
@@ -17,6 +18,12 @@ const Column = styled.div`
 
 const MultiColumn = ({ columns, gutter, children, ...rest }) => {
   const columnBuilder = () => {
+    if (columns === 1) {
+      return (
+        <Column key="column-0" gutter={gutter}>{children}</Column>
+      );
+    }
+
     const builtColumns = [];
 
     for (let i = 0; i < columns; i++) {
@@ -24,7 +31,7 @@ const MultiColumn = ({ columns, gutter, children, ...rest }) => {
       for (let j = i % columns; j < children.length; j += columns) {
         columnData.push(children[j]);
       }
-      builtColumns.push(<Column key={i} gutter={gutter}>{columnData}</Column>);
+      builtColumns.push(<Column key={`column-${i}`} gutter={gutter}>{columnData}</Column>);
     }
 
     return builtColumns;
