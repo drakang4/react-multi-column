@@ -5,6 +5,8 @@
 
 A simple react library for building multi-column layout
 
+![example](https://github.com/drakang4/react-multi-column/blob/master/image.jpg?raw=true)
+
 ## Installation
 ```
 yarn add react-multi-column
