@@ -1,6 +1,6 @@
 {
   "name": "react-multi-column",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A simple react library for building multi-column layout",
   "main": "lib/index.js",
   "author": "Heeryong Kang <drakang4@gmail.com> (https://github.com/drakang4)",
