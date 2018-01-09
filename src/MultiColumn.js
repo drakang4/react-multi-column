@@ -8,7 +8,7 @@ const Container = styled.div`
 `;
 
 const Column = styled.div`
-  flex: auto;
+  flex: 1 1 0;
   margin-right: ${props => props.gutter}px;
 
   &:last-child {
